@@ -7,7 +7,7 @@ Code and data for:
 > Genetics* (in revision).
 
 Repository: <https://github.com/PlatypusConservation/KI-platypus>
-Archive and DOI: Zenodo, `10.5281/zenodo.XXXXXXX` (see **How to cite**).
+Archive and DOI: Zenodo, `10.5281/zenodo.23052692` (see **How to cite**).
 Corresponding author: Gilad Bino, <gilad.bino@unsw.edu.au>, Centre for Ecosystem Science, UNSW Sydney.
 
 ---
@@ -283,9 +283,9 @@ deposit; it is supplied as PNG and PDF.
 
 > Bino, G., Hawke, T., Baring, R. & Gongora, J. (2026). *Code and data for "Drifting alone:
 > genome-wide diversity in the isolated, introduced Kangaroo Island platypus (Ornithorhynchus
-> anatinus)"* (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> anatinus)"* (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23052692
 
-Replace `10.5281/zenodo.XXXXXXX` with the DOI Zenodo mints. Use the **concept DOI**, which always
+Replace `10.5281/zenodo.23052692` with the DOI Zenodo mints. Use the **concept DOI**, which always
 resolves to the newest version — see `PUBLISH.md` §2.4. `CITATION.cff` and `.zenodo.json` carry the
 same placeholder and must be updated in the same commit.
 

@@ -1,3 +1,12 @@
+> **Status, 30 September 2026 — this has been done.**
+> The repository is public at <https://github.com/PlatypusConservation/KI-platypus>.
+> Releases `v1.0.0` and `v1.0.1` were both archived by Zenodo.
+> Version DOIs: `10.5281/zenodo.23052693` (v1.0.0) and `10.5281/zenodo.23052699` (v1.0.1).
+> **Concept DOI, the one cited in the paper: `10.5281/zenodo.23052692`.**
+> Still to do on Zenodo: add each creator's ORCID, and correct the version label on the
+> v1.0.1 record, which reads 1.0.0 because `.zenodo.json` carries a hardcoded version.
+> The steps below are kept as the record of how it was done.
+
 # PUBLISH.md — how to put this deposit on GitHub and archive it on Zenodo
 
 Two parts:

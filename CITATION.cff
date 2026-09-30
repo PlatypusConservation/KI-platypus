@@ -1,12 +1,10 @@
 # Citation File Format 1.2.0 -- https://citation-file-format.github.io
 #
-# BEFORE THE RELEASE, edit three things:
-#   1. doi:            replace zenodo.XXXXXXX with the DOI Zenodo reserves or mints
-#                      (use the concept DOI -- see PUBLISH.md section 2.4)
-#   2. date-released:  set it to the day you cut the v1.0.0 release
-#   3. orcid:          add "orcid: https://orcid.org/0000-0000-0000-0000" under each
-#                      author who has one. The field is left out rather than left
-#                      blank, because an empty orcid fails CFF validation.
+# doi: below is the Zenodo CONCEPT DOI, which resolves to the latest version.
+# date-released: the day v1.0.0 was cut.
+# Still to add: "orcid: https://orcid.org/0000-0000-0000-0000" under each author who
+# has one. The field is left out rather than left blank, because an empty orcid fails
+# CFF validation.
 # Validate with:  pip install cffconvert && cffconvert --validate
 
 cff-version: 1.2.0
@@ -30,7 +28,7 @@ abstract: >-
 type: software
 version: 1.0.0
 date-released: '2026-09-30'
-doi: 10.5281/zenodo.XXXXXXX
+doi: 10.5281/zenodo.23052692
 license:
   - MIT
   - CC0-1.0
