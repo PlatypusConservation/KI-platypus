@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# matplotlib font cache written by the figure scripts
+.mplcache/
+
+# Editor and OS droppings
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+
+# Nothing in this deposit is generated at build time; every file under
+# code/, data/, results/ and figures/ is meant to be committed.

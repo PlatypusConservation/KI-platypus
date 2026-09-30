@@ -1,0 +1,291 @@
+{
+ "n_loci_total": 4002,
+ "KI": {
+  "n": 8,
+  "gene_copies": 16,
+  "n_polymorphic": 1105,
+  "mean_folded_maf": 0.23840497737556562,
+  "median_folded_maf": 0.1875,
+  "mac_counts": {
+   "1": 221,
+   "2": 178,
+   "3": 154,
+   "4": 128,
+   "5": 134,
+   "6": 110,
+   "7": 106,
+   "8": 74
+  },
+  "mac_proportions": {
+   "1": 0.2,
+   "2": 0.16108597285067874,
+   "3": 0.13936651583710408,
+   "4": 0.1158371040723982,
+   "5": 0.12126696832579185,
+   "6": 0.09954751131221719,
+   "7": 0.09592760180995476,
+   "8": 0.0669683257918552
+  }
+ },
+ "tests": {
+  "KI_vs_OVENS_full_legacy": {
+   "KS_D": 0.31831155270069295,
+   "KS_p": 5.381468932983819e-62,
+   "MW_z": 15.591220507055802,
+   "MW_p": 8.352242369517499e-55,
+   "note": "UNMATCHED sample size (n=8 vs n=19); reported only to show what the submitted comparison becomes on co-processed data. Not the primary result."
+  },
+  "KI_vs_OVENS_n8_PRIMARY": {
+   "KS_D_mean_over_200_subsamples": 0.1391364807487011,
+   "KS_D_sd": 0.010364144820911027,
+   "empirical_p_mean_maf_ge_KI": 0.0,
+   "KI_mean_folded_maf": 0.23840497737556562,
+   "OVENS_n8_mean_folded_maf": 0.19618000011660996,
+   "difference": 0.04222497725895566,
+   "legacy_difference_unmatched": 0.07491866611597503,
+   "pct_of_legacy_gap_that_is_sample_size_artefact": 43.638909436013094
+  },
+  "KI_all_vs_KI_old_subset": {
+   "KS_D": 0.00872656755009693,
+   "KS_p": 0.9999999999998539,
+   "MW_z": -0.05122540450057785,
+   "MW_p": 0.9591459085513958,
+   "KI_all_mean": 0.23840497737556562,
+   "KI_old_subset_mean": 0.23818681318681317
+  }
+ },
+ "OVENS_full": {
+  "n": 19,
+  "gene_copies": 38,
+  "n_polymorphic": 1859,
+  "mean_folded_maf": 0.1634863112595906,
+  "median_folded_maf": 0.13157894736842105,
+  "note": "reported for continuity with the submitted analysis ONLY; not a valid comparator for KI because n differs"
+ },
+ "OVENS_rarefied_n8": {
+  "n": 8,
+  "reps": 200,
+  "mean_folded_maf": 0.19618000011660996,
+  "sd": 0.0025288839859891033,
+  "ci95": [
+   0.19226284953762865,
+   0.20179412462365268
+  ],
+  "n_polymorphic_mean": 1513.395,
+  "n_polymorphic_sd": 28.15086733403238,
+  "mac_proportions_mean": {
+   "1": 0.3045444139102766,
+   "2": 0.19330683126856815,
+   "3": 0.13687449184197467,
+   "4": 0.10364974629792487,
+   "5": 0.08438589249641883,
+   "6": 0.07439890783761464,
+   "7": 0.06854117558483697,
+   "8": 0.03429854076238528
+  },
+  "mac_proportions_lo": {
+   "1": 0.28501089688211734,
+   "2": 0.17244467622677778,
+   "3": 0.11861818702437198,
+   "4": 0.09055374592833876,
+   "5": 0.07127222375341213,
+   "6": 0.062949477779312,
+   "7": 0.05906965064952975,
+   "8": 0.026329681790518613
+  },
+  "mac_proportions_hi": {
+   "1": 0.3258268594243244,
+   "2": 0.21393891460151934,
+   "3": 0.1529415033199726,
+   "4": 0.11609884206655448,
+   "5": 0.09743613206737793,
+   "6": 0.08541379587524689,
+   "7": 0.07869978288584535,
+   "8": 0.04443706474854816
+  },
+  "KS_D_vs_KI_mean": 0.1391364807487011,
+  "KS_D_vs_KI_sd": 0.010364144820911027,
+  "empirical_p_mean_maf_ge_KI": 0.0
+ },
+ "SNOWY_rarefied_n8": {
+  "n": 8,
+  "reps": 200,
+  "mean_folded_maf": 0.19385347970339833,
+  "sd": 0.003126066012025606,
+  "ci95": [
+   0.18801778555694001,
+   0.200290139876167
+  ],
+  "n_polymorphic_mean": 1498.765,
+  "n_polymorphic_sd": 26.573871154589117,
+  "mac_proportions_mean": {
+   "1": 0.3127300945875413,
+   "2": 0.19380604513935076,
+   "3": 0.134452279996689,
+   "4": 0.10260424248691372,
+   "5": 0.08387860516986624,
+   "6": 0.07263152579753607,
+   "7": 0.06682015476096231,
+   "8": 0.03307705206114063
+  },
+  "mac_proportions_lo": {
+   "1": 0.28947049034251354,
+   "2": 0.175333868052468,
+   "3": 0.11841507899277154,
+   "4": 0.08753107591731504,
+   "5": 0.07013416923591538,
+   "6": 0.06024601099134498,
+   "7": 0.0544295977125296,
+   "8": 0.02354973323100082
+  },
+  "mac_proportions_hi": {
+   "1": 0.3346498643818602,
+   "2": 0.21448374293170944,
+   "3": 0.15190842958621711,
+   "4": 0.11713923287583734,
+   "5": 0.09877867544079605,
+   "6": 0.08554679243288946,
+   "7": 0.07863643827261853,
+   "8": 0.042455339221196306
+  },
+  "KS_D_vs_KI_mean": 0.1466955739621194,
+  "KS_D_vs_KI_sd": 0.011651781740739503,
+  "empirical_p_mean_maf_ge_KI": 0.0
+ },
+ "THREDBO_rarefied_n8": {
+  "n": 8,
+  "reps": 200,
+  "mean_folded_maf": 0.19604210100801298,
+  "sd": 0.0022007459825786526,
+  "ci95": [
+   0.1915665476368127,
+   0.20005856022315469
+  ],
+  "n_polymorphic_mean": 1500.135,
+  "n_polymorphic_sd": 20.540357994267367,
+  "mac_proportions_mean": {
+   "1": 0.30553090099083935,
+   "2": 0.191003984290151,
+   "3": 0.13619296720776913,
+   "4": 0.10511734735702945,
+   "5": 0.08778945023289564,
+   "6": 0.07330012572616865,
+   "7": 0.06718334357702396,
+   "8": 0.03388188061812285
+  },
+  "mac_proportions_lo": {
+   "1": 0.28462620504065184,
+   "2": 0.17292100422109408,
+   "3": 0.12005365526492287,
+   "4": 0.0904171996766624,
+   "5": 0.07493302103879027,
+   "6": 0.062000181279154284,
+   "7": 0.05629829918232966,
+   "8": 0.026417028391341413
+  },
+  "mac_proportions_hi": {
+   "1": 0.3257030096645724,
+   "2": 0.2085243281914632,
+   "3": 0.15418644939465515,
+   "4": 0.12239383971291867,
+   "5": 0.10470860082517074,
+   "6": 0.08410803405088595,
+   "7": 0.07886323291841986,
+   "8": 0.04254063956906334
+  },
+  "KS_D_vs_KI_mean": 0.1378321805553805,
+  "KS_D_vs_KI_sd": 0.009031858314234214,
+  "empirical_p_mean_maf_ge_KI": 0.0
+ },
+ "TENTERFIELD_rarefied_n8": {
+  "n": 8,
+  "reps": 200,
+  "mean_folded_maf": 0.20066820709593905,
+  "sd": 0.003087053678466074,
+  "ci95": [
+   0.19495246318657153,
+   0.20682898458368978
+  ],
+  "n_polymorphic_mean": 1407.345,
+  "n_polymorphic_sd": 25.041392366605564,
+  "mac_proportions_mean": {
+   "1": 0.28606196566492964,
+   "2": 0.19098147594839024,
+   "3": 0.1407116441872754,
+   "4": 0.11074728298893448,
+   "5": 0.08979783750180281,
+   "6": 0.07737417549647782,
+   "7": 0.07029685472964822,
+   "8": 0.03402876348254146
+  },
+  "mac_proportions_lo": {
+   "1": 0.2654515723708916,
+   "2": 0.16978705071393402,
+   "3": 0.12237762237762238,
+   "4": 0.09234876358325453,
+   "5": 0.07642234624482555,
+   "6": 0.06399860771835962,
+   "7": 0.05759281991492928,
+   "8": 0.025174825174825177
+  },
+  "mac_proportions_hi": {
+   "1": 0.307052142905628,
+   "2": 0.20959513945760927,
+   "3": 0.15719917514851112,
+   "4": 0.12712821034499472,
+   "5": 0.10311512874153538,
+   "6": 0.09071121480092913,
+   "7": 0.08288232847111955,
+   "8": 0.0436674634140993
+  },
+  "KS_D_vs_KI_mean": 0.12130296530051915,
+  "KS_D_vs_KI_sd": 0.0101675301427453,
+  "empirical_p_mean_maf_ge_KI": 0.0
+ },
+ "KI_on_old_cloneid_subset": {
+  "n_loci": 2953,
+  "n_polymorphic": 910,
+  "mean_folded_maf": 0.23818681318681317,
+  "median_folded_maf": 0.25,
+  "mac_counts": {
+   "1": 176,
+   "2": 149,
+   "3": 125,
+   "4": 110,
+   "5": 118,
+   "6": 88,
+   "7": 91,
+   "8": 53
+  },
+  "mac_proportions": {
+   "1": 0.1934065934065934,
+   "2": 0.16373626373626374,
+   "3": 0.13736263736263737,
+   "4": 0.12087912087912088,
+   "5": 0.12967032967032968,
+   "6": 0.0967032967032967,
+   "7": 0.1,
+   "8": 0.05824175824175824
+  }
+ },
+ "KI_on_loci_lost_by_old_rule": {
+  "n_loci": 1049,
+  "n_polymorphic": 195,
+  "mean_folded_maf": 0.23942307692307693
+ },
+ "submitted_values_for_reference": {
+  "KI_mean_folded_maf": 0.248,
+  "KI_n_polymorphic": 472,
+  "OVENS_mean_folded_maf": 0.175,
+  "OVENS_n_polymorphic": 788,
+  "KS_D": 0.35,
+  "source": "MS_submitted.md / bottleneck_diagnostics.json"
+ },
+ "mainland_n8_envelope_mean_folded_maf": [
+  0.19385347970339833,
+  0.20066820709593905
+ ],
+ "merge_hypothesis_supported": false,
+ "sample_size_artefact_pct_of_published_gap": 43.638909436013094,
+ "verdict": "On the co-processed data KI's mean folded MAF is 0.238 over 1105 polymorphic loci (submitted: 0.248 over 472), and the folded spectrum is close to monotonically decreasing rather than intermediate-peaked. Restricting KI to the loci the old CloneID rule would have kept changes its mean folded MAF by only -0.0002 (to 0.238), so the merge itself did NOT create the shape: Reviewer 1's specific mechanism is not supported. What DOES explain roughly half of the published KI-Ovens difference is unmatched sample size: rarefying Ovens to n = 8 raises its mean folded MAF from 0.163 to 0.196, removing 44% of the published gap. A residual excess of intermediate-frequency variants in KI remains (KI 0.238 vs the mainland n = 8 envelope 0.194-0.201; empirical p < 0.005), which is consistent with drift at small effective population size but is not diagnostic of an acute recent bottleneck."
+}

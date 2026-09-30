@@ -1,0 +1,53 @@
+{
+ "input_panel_22054": {
+  "n_loci": 22054,
+  "polymorphic_in_DPla19-4171_order": 16773,
+  "polymorphic_in_DPla24-9425_order": 20199,
+  "monomorphic_in_4171_but_polymorphic_in_9425": 5222,
+  "monomorphic_in_9425_but_polymorphic_in_4171": 1796,
+  "monomorphic_in_both_orders": 59,
+  "monomorphic_in_Mijangos214_but_polymorphic_in_KI8": 566,
+  "polymorphic_in_Mijangos214_but_monomorphic_in_KI8": 11453,
+  "fixed_allelic_difference_KI_vs_mainland": 86
+ },
+ "final_filtered_set": {
+  "n_loci": 4002,
+  "polymorphic_in_DPla19-4171_order": 3420,
+  "polymorphic_in_DPla24-9425_order": 3704,
+  "monomorphic_in_4171_but_polymorphic_in_9425": 581,
+  "monomorphic_in_9425_but_polymorphic_in_4171": 297,
+  "monomorphic_in_both_orders": 1,
+  "monomorphic_in_Mijangos214_but_polymorphic_in_KI8": 57,
+  "polymorphic_in_Mijangos214_but_monomorphic_in_KI8": 2366,
+  "fixed_allelic_difference_KI_vs_mainland": 2
+ },
+ "final_set_retained_by_old_cloneid_rule": {
+  "n_loci": 2953,
+  "polymorphic_in_DPla19-4171_order": 2940,
+  "polymorphic_in_DPla24-9425_order": 2674,
+  "monomorphic_in_4171_but_polymorphic_in_9425": 13,
+  "monomorphic_in_9425_but_polymorphic_in_4171": 279,
+  "monomorphic_in_both_orders": 0,
+  "monomorphic_in_Mijangos214_but_polymorphic_in_KI8": 1,
+  "polymorphic_in_Mijangos214_but_monomorphic_in_KI8": 2029,
+  "fixed_allelic_difference_KI_vs_mainland": 0
+ },
+ "final_set_lost_by_old_cloneid_rule": {
+  "n_loci": 1049,
+  "polymorphic_in_DPla19-4171_order": 480,
+  "polymorphic_in_DPla24-9425_order": 1030,
+  "monomorphic_in_4171_but_polymorphic_in_9425": 568,
+  "monomorphic_in_9425_but_polymorphic_in_4171": 18,
+  "monomorphic_in_both_orders": 1,
+  "monomorphic_in_Mijangos214_but_polymorphic_in_KI8": 56,
+  "polymorphic_in_Mijangos214_but_monomorphic_in_KI8": 337,
+  "fixed_allelic_difference_KI_vs_mainland": 2
+ },
+ "pct_of_class_that_the_old_rule_would_have_dropped": {
+  "monomorphic_in_4171_but_polymorphic_in_9425": 97.76247848537005,
+  "monomorphic_in_9425_but_polymorphic_in_4171": 6.0606060606060606,
+  "monomorphic_in_Mijangos214_but_polymorphic_in_KI8": 98.24561403508773,
+  "fixed_allelic_difference_KI_vs_mainland": 100.0
+ },
+ "statement": "Because both DArT orders were called in a single pipeline run, loci that are monomorphic within one order and loci that are fixed differences between KI and the mainland are present in the matrix and are retained by the revised pipeline. Under the CloneID-matching rule used in the submitted analysis a substantial fraction of exactly these classes was discarded."
+}

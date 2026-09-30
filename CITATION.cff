@@ -1,0 +1,134 @@
+# Citation File Format 1.2.0 -- https://citation-file-format.github.io
+#
+# BEFORE THE RELEASE, edit three things:
+#   1. doi:            replace zenodo.XXXXXXX with the DOI Zenodo reserves or mints
+#                      (use the concept DOI -- see PUBLISH.md section 2.4)
+#   2. date-released:  set it to the day you cut the v1.0.0 release
+#   3. orcid:          add "orcid: https://orcid.org/0000-0000-0000-0000" under each
+#                      author who has one. The field is left out rather than left
+#                      blank, because an empty orcid fails CFF validation.
+# Validate with:  pip install cffconvert && cffconvert --validate
+
+cff-version: 1.2.0
+message: >-
+  If you use this code or these data, please cite both this deposit and the
+  associated article (see preferred-citation), and also cite Mijangos et al.
+  (2022) for the mainland platypus genotypes, which are not ours.
+title: >-
+  Code and data for "Drifting alone: genome-wide diversity in the isolated,
+  introduced Kangaroo Island platypus (Ornithorhynchus anatinus)"
+abstract: >-
+  The filtered 4,002-SNP by 222-individual DArTseq genotype matrix, the locus
+  and sample metadata, the complete result tables and the figures for a
+  conservation-genomics assessment of the introduced Kangaroo Island platypus
+  population, together with the single Python pipeline that produces them from
+  the co-processed DArT report. The full 22,054-locus by 376-sample co-processed
+  report and the raw reads are not included: 218 of those samples belong to
+  Mijangos et al. (2022) and redistributing them needs the data owners'
+  permission. They are available from the corresponding author subject to that
+  permission.
+type: software
+version: 1.0.0
+date-released: '2026-09-30'
+doi: 10.5281/zenodo.XXXXXXX
+license:
+  - MIT
+  - CC0-1.0
+repository-code: 'https://github.com/PlatypusConservation/KI-platypus'
+url: 'https://github.com/PlatypusConservation/KI-platypus'
+keywords:
+  - Ornithorhynchus anatinus
+  - platypus
+  - conservation genomics
+  - genetic drift
+  - founder effect
+  - introduced population
+  - island population
+  - effective population size
+  - single-nucleotide polymorphism
+  - DArTseq
+  - Kangaroo Island
+  - genetic reinforcement
+authors:
+  - family-names: Bino
+    given-names: Gilad
+    email: gilad.bino@unsw.edu.au
+    affiliation: >-
+      Centre for Ecosystem Science, School of Biological, Earth and
+      Environmental Sciences, University of New South Wales, Sydney NSW 2052,
+      Australia
+  - family-names: Hawke
+    given-names: Tahneal
+    affiliation: >-
+      Centre for Ecosystem Science, School of Biological, Earth and
+      Environmental Sciences, University of New South Wales, Sydney NSW 2052,
+      Australia; and Taronga Institute of Science and Learning, Taronga
+      Conservation Society Australia, Dubbo NSW 2830, Australia
+  - family-names: Baring
+    given-names: Ryan
+    affiliation: >-
+      College of Sciences and Engineering, Flinders University, Sturt Road,
+      Bedford Park SA 5042, Australia
+  - family-names: Gongora
+    given-names: Jaime
+    affiliation: >-
+      Sydney School of Veterinary Science, Faculty of Science, The University of
+      Sydney, Sydney, Australia
+contact:
+  - family-names: Bino
+    given-names: Gilad
+    email: gilad.bino@unsw.edu.au
+preferred-citation:
+  type: article
+  title: >-
+    Drifting alone: genome-wide diversity in the isolated, introduced Kangaroo
+    Island platypus (Ornithorhynchus anatinus)
+  journal: Conservation Genetics
+  year: 2026
+  notes: In revision at the time of this release; update volume, pages and DOI on acceptance.
+  authors:
+    - family-names: Bino
+      given-names: Gilad
+      email: gilad.bino@unsw.edu.au
+      affiliation: >-
+        Centre for Ecosystem Science, School of Biological, Earth and
+        Environmental Sciences, University of New South Wales, Sydney NSW 2052,
+        Australia
+    - family-names: Hawke
+      given-names: Tahneal
+      affiliation: >-
+        Centre for Ecosystem Science, School of Biological, Earth and
+        Environmental Sciences, University of New South Wales, Sydney NSW 2052,
+        Australia; and Taronga Institute of Science and Learning, Taronga
+        Conservation Society Australia, Dubbo NSW 2830, Australia
+    - family-names: Baring
+      given-names: Ryan
+      affiliation: >-
+        College of Sciences and Engineering, Flinders University, Sturt Road,
+        Bedford Park SA 5042, Australia
+    - family-names: Gongora
+      given-names: Jaime
+      affiliation: >-
+        Sydney School of Veterinary Science, Faculty of Science, The University
+        of Sydney, Sydney, Australia
+references:
+  - type: dataset
+    title: >-
+      Data and code for "Contrasting genetic diversity and structure in the
+      platypus across its range"
+    doi: 10.5281/zenodo.7039778
+    year: 2022
+    notes: >-
+      The mainland Murray-Darling genotypes (DArT order DPla19-4171) analysed
+      alongside the Kangaroo Island samples. Not redistributed here.
+    authors:
+      - family-names: Mijangos
+        given-names: Jose Luis
+      - family-names: Gruber
+        given-names: Bernd
+      - family-names: Berry
+        given-names: Oliver
+      - family-names: Pacioni
+        given-names: Carlo
+      - family-names: Georges
+        given-names: Arthur

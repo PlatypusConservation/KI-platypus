@@ -1,0 +1,80 @@
+{
+  "upload_type": "dataset",
+  "title": "Code and data for \"Drifting alone: genome-wide diversity in the isolated, introduced Kangaroo Island platypus (Ornithorhynchus anatinus)\"",
+  "version": "1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "cc-zero",
+  "description": "<p>The platypus (<em>Ornithorhynchus anatinus</em>) is endemic to eastern Australia. The introduced Kangaroo Island (KI) population in South Australia is the species' only population outside its native range; it descends from approximately 19 founders released between 1928 and 1946 and has been closed ever since, and has since experienced streamflow decline, the 2019-20 megafires that burnt 96% of Flinders Chase National Park, and a record flood.</p><p>This deposit holds the code and data behind a conservation-genomics assessment of that population. DArTseq genotypes of eight KI individuals (captured May 2021, order DPla24-9425) were analysed against 214 published mainland Murray-Darling samples (Mijangos et al. 2022, order DPla19-4171), with both DArT orders called in a single pipeline run and filtered once across the joint matrix. The analysis dataset is 4,002 biallelic SNPs scored in all 222 individuals with no missing genotypes, with every locus assigned to a sex chromosome excluded. KI has the lowest expected heterozygosity of the eleven populations (H_E = 0.0954, 86.5% of the mainland mean), the lowest rarefied allelic richness of the nine populations standardisable to 16 gene copies, 22.9% fewer polymorphic loci at a matched sample size of eight, and pairwise F_ST of 0.147-0.264 (mean 0.191) against every mainland population, least against the Victorian Ovens.</p><p><strong>Contents.</strong> <code>data/</code>: the filtered 4,002 x 222 genotype matrix, per-locus and per-sample metadata, the per-population and per-individual diversity tables, and a data dictionary. <code>results/</code>: every statistic the manuscript quotes, as JSON and CSV, plus RESULTS_SUMMARY.md, the authoritative numbers file. <code>figures/</code>: the seven final figures as 300 dpi PNG and vector PDF. <code>code/</code>: the single analysis pipeline, both figure scripts, the script that built this deposit, and a standalone script that recomputes the manuscript's headline statistics from the deposited genotype matrix and checks them against the deposited tables.</p><p><strong>Reproducibility.</strong> Python 3.10.12 with numpy 2.2.6, pandas 2.3.3 and matplotlib 3.10.9; no scipy, no R, no dartR. Seed 42 throughout, so reruns are bit-identical. Run <code>python code/reproduce_from_deposit.py</code> to verify the whole deposit in about 20 seconds without any external file.</p><p><strong>What is not here, and why.</strong> The full co-processed DArT report (22,054 loci x 376 samples) and the raw DArTseq reads are <em>not</em> included: 218 of those samples belong to Mijangos et al. (2022) and redistributing them requires the data owners' permission, which the authors do not hold. The full co-processed report is available from the corresponding author subject to the data owners' permission; the mainland genotypes themselves are already public at doi:10.5281/zenodo.7039778 and should be cited to Mijangos et al. (2022). Per-individual capture coordinates are withheld because the platypus is listed Endangered in South Australia.</p><p><strong>Licences.</strong> Data, result tables and figures are released under CC0 1.0 Universal. The code in <code>code/</code> is released under the MIT Licence (see LICENSE in the repository).</p><p><strong>To do before publishing:</strong> add each creator's ORCID in the Zenodo deposit form (the <code>orcid</code> field is deliberately absent from this file rather than present and empty, because an empty ORCID fails validation), and replace the placeholder DOI in README.md and CITATION.cff with the DOI reserved or minted here.</p>",
+  "creators": [
+    {
+      "name": "Bino, Gilad",
+      "affiliation": "Centre for Ecosystem Science, School of Biological, Earth and Environmental Sciences, University of New South Wales, Sydney NSW 2052, Australia"
+    },
+    {
+      "name": "Hawke, Tahneal",
+      "affiliation": "Centre for Ecosystem Science, School of Biological, Earth and Environmental Sciences, University of New South Wales, Sydney NSW 2052, Australia; Taronga Institute of Science and Learning, Taronga Conservation Society Australia, Dubbo NSW 2830, Australia"
+    },
+    {
+      "name": "Baring, Ryan",
+      "affiliation": "College of Sciences and Engineering, Flinders University, Sturt Road, Bedford Park SA 5042, Australia"
+    },
+    {
+      "name": "Gongora, Jaime",
+      "affiliation": "Sydney School of Veterinary Science, Faculty of Science, The University of Sydney, Sydney, Australia"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Bino, Gilad",
+      "type": "ContactPerson",
+      "affiliation": "Centre for Ecosystem Science, School of Biological, Earth and Environmental Sciences, University of New South Wales, Sydney NSW 2052, Australia"
+    }
+  ],
+  "keywords": [
+    "Ornithorhynchus anatinus",
+    "platypus",
+    "conservation genomics",
+    "population genomics",
+    "genetic drift",
+    "founder effect",
+    "introduced population",
+    "island population",
+    "effective population size",
+    "single-nucleotide polymorphism",
+    "SNP",
+    "DArTseq",
+    "reduced-representation sequencing",
+    "heterozygosity",
+    "inbreeding",
+    "relatedness",
+    "site-frequency spectrum",
+    "Kangaroo Island",
+    "South Australia",
+    "genetic reinforcement",
+    "translocation",
+    "monotreme"
+  ],
+  "subjects": [
+    {
+      "term": "Conservation genomics",
+      "identifier": "https://linked.data.gov.au/def/anzsrc-for/2020/310599",
+      "scheme": "url"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/PlatypusConservation/KI-platypus",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.7039778",
+      "relation": "references",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Animal ethics and permits: Flinders University Animal Welfare Committee approval AEC BIOL4071-3; Ministerial Exemption ME9903147 (Primary Industries and Resources South Australia); permit U27033-1 to undertake scientific research in Flinders Chase National Park (South Australian Department for Environment and Water). All individuals were released at their site of capture. Supplement to Bino, Hawke, Baring & Gongora, Conservation Genetics (in revision); add the article DOI as an 'isSupplementTo' related identifier once it is assigned."
+}

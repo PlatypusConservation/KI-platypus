@@ -1,0 +1,112 @@
+{
+ "n_loci_final": 4002,
+ "KI": {
+  "n": 8,
+  "n_polymorphic": 1105,
+  "prop": 0.276111944027986
+ },
+ "all_populations_full_n": {
+  "KI": {
+   "n": 8,
+   "n_polymorphic": 1105,
+   "prop": 0.276111944027986
+  },
+  "EUCUMBENE_ABOVE": {
+   "n": 4,
+   "n_polymorphic": 1190,
+   "prop": 0.29735132433783107
+  },
+  "EUCUMBENE_BELOW": {
+   "n": 20,
+   "n_polymorphic": 1648,
+   "prop": 0.41179410294852575
+  },
+  "MITTA_ABOVE": {
+   "n": 13,
+   "n_polymorphic": 1681,
+   "prop": 0.420039980009995
+  },
+  "MITTA_BELOW": {
+   "n": 4,
+   "n_polymorphic": 1254,
+   "prop": 0.31334332833583206
+  },
+  "OVENS": {
+   "n": 19,
+   "n_polymorphic": 1859,
+   "prop": 0.4645177411294353
+  },
+  "SEVERN_ABOVE": {
+   "n": 23,
+   "n_polymorphic": 1572,
+   "prop": 0.39280359820089955
+  },
+  "SEVERN_BELOW": {
+   "n": 17,
+   "n_polymorphic": 1516,
+   "prop": 0.37881059470264866
+  },
+  "SNOWY": {
+   "n": 56,
+   "n_polymorphic": 2183,
+   "prop": 0.5454772613693153
+  },
+  "TENTERFIELD": {
+   "n": 39,
+   "n_polymorphic": 1890,
+   "prop": 0.47226386806596704
+  },
+  "THREDBO": {
+   "n": 19,
+   "n_polymorphic": 1839,
+   "prop": 0.45952023988005997
+  }
+ },
+ "mainland_at_n8": {
+  "EUCUMBENE_BELOW": {
+   "n_poly_mean": 1375.665,
+   "n_poly_sd": 31.060045187268738,
+   "prop_mean": 0.34374437781109446,
+   "KI_pct_of_this": 80.32478837507678,
+   "KI_deficit_pct": 19.675211624923218
+  },
+  "OVENS": {
+   "n_poly_mean": 1514.71,
+   "n_poly_sd": 25.55604541564348,
+   "prop_mean": 0.378488255872064,
+   "KI_pct_of_this": 72.9512579965802,
+   "KI_deficit_pct": 27.0487420034198
+  },
+  "SEVERN_ABOVE": {
+   "n_poly_mean": 1303.81,
+   "n_poly_sd": 30.929550359278352,
+   "prop_mean": 0.3257896051974013,
+   "KI_pct_of_this": 84.7516125815878,
+   "KI_deficit_pct": 15.24838741841219
+  },
+  "SNOWY": {
+   "n_poly_mean": 1501.205,
+   "n_poly_sd": 25.231052396305742,
+   "prop_mean": 0.37511369315342324,
+   "KI_pct_of_this": 73.60753527999174,
+   "KI_deficit_pct": 26.392464720008256
+  },
+  "TENTERFIELD": {
+   "n_poly_mean": 1409.15,
+   "n_poly_sd": 27.164444319291338,
+   "prop_mean": 0.3521114442778611,
+   "KI_pct_of_this": 78.41606642302096,
+   "KI_deficit_pct": 21.58393357697903
+  },
+  "THREDBO": {
+   "n_poly_mean": 1496.095,
+   "n_poly_sd": 20.292483817844662,
+   "prop_mean": 0.3738368315842079,
+   "KI_pct_of_this": 73.85894612307374,
+   "KI_deficit_pct": 26.141053876926268
+  }
+ },
+ "mainland_mean_n_poly_at_n8": 1433.4391666666663,
+ "KI_pct_of_mainland_mean_at_n8": 77.08733134239509,
+ "KI_deficit_vs_mainland_mean_at_n8_pct": 22.912668657604918
+}

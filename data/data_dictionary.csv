@@ -1,0 +1,111 @@
+file,column,definition,units_or_codes
+genotypes_filtered_4002x222.csv,AlleleID,DArT allele identifier; the locus key shared with loci_filtered_4002.csv,text
+genotypes_filtered_4002x222.csv,<sample>,"Alternate-allele dosage for that individual at that locus; 222 columns, one per analysed individual (KI1-KI8 plus 214 mainland)","0 = reference homozygote, 1 = heterozygote, 2 = alternate homozygote; no missing values"
+loci_filtered_4002.csv,AlleleID,DArT allele identifier,text
+loci_filtered_4002.csv,CloneID,DArT clone (tag) identifier; one SNP per CloneID is retained,integer
+loci_filtered_4002.csv,SNP,SNP position and base change within the tag,"text, e.g. 20:C>T"
+loci_filtered_4002.csv,SnpPosition,Position of the SNP within the 69 bp tag,"base pairs, 0-based"
+loci_filtered_4002.csv,scaffold,PTTO01 scaffold of the aligned tag (assembly mOrnAna1.pri.v1),text
+loci_filtered_4002.csv,scaffold_pos,Alignment position of the tag on the scaffold,base pairs
+loci_filtered_4002.csv,refseq_majority,"Majority RefSeq chromosome accession for the scaffold, from the AlleleID-anchored crosswalk","text, e.g. NC_041735.1"
+loci_filtered_4002.csv,chrom_label,Chromosome label from the crosswalk,"1-21, X1-X5, Y1-Y5, unplaced, unanchored"
+loci_filtered_4002.csv,class,Chromosome class from the crosswalk,autosome / sex / unplaced / unanchored
+loci_filtered_4002.csv,RepAvg,DArT average reproducibility of the locus,proportion 0-1
+loci_filtered_4002.csv,AlnCnt,Number of reference alignments reported by DArT,count
+loci_filtered_4002.csv,AlnEvalue,BLAST E-value of the tag alignment,dimensionless
+loci_filtered_4002.csv,CallRate_report,Call rate reported by DArT across all 376 report samples,proportion 0-1
+loci_filtered_4002.csv,CallRate_222,Call rate recomputed across the 222 analysed individuals,proportion 0-1
+loci_filtered_4002.csv,pass_rep,Passed the RepAvg >= 1.0 filter,"1 = pass, 0 = fail"
+loci_filtered_4002.csv,pass_aln,Passed the AlnCnt >= 1 filter,"1 = pass, 0 = fail"
+loci_filtered_4002.csv,pass_blast,Passed the AlnEvalue <= 1e-20 filter,"1 = pass, 0 = fail"
+loci_filtered_4002.csv,pass_autosome,Assigned to an autosome by the crosswalk,"1 = pass, 0 = fail"
+loci_filtered_4002.csv,pass_callrate,Call rate == 1.0 over the 222 analysed individuals,"1 = pass, 0 = fail"
+loci_filtered_4002.csv,pass_hwe,Did not fail the per-population Hardy-Weinberg test in two or more of the six populations with n >= 19,"1 = pass, 0 = fail"
+loci_filtered_4002.csv,pass_secondary,Survived the one-SNP-per-CloneID rule; identical to retained,"1 = pass, 0 = fail"
+loci_filtered_4002.csv,retained,In the final analysis set; 1 for every row of this file,1
+loci_filtered_4002.csv,retained_by_old_cloneid_rule,Would also have been kept by the superseded CloneID-matching rule of the submitted version,"1 = yes, 0 = no"
+loci_filtered_4002.csv,p_joint,Alternate-allele frequency across all 222 individuals,proportion 0-1
+loci_filtered_4002.csv,maf_joint,Minor-allele frequency across all 222 individuals,proportion 0-0.5
+loci_filtered_4002.csv,p_KI,Alternate-allele frequency in the eight KI individuals,proportion 0-1
+loci_filtered_4002.csv,p_mainland,Alternate-allele frequency in the 214 mainland individuals,proportion 0-1
+loci_filtered_4002.csv,poly_KI,Polymorphic within KI,"1 = yes, 0 = no"
+loci_filtered_4002.csv,poly_mainland,Polymorphic within the mainland panel,"1 = yes, 0 = no"
+loci_filtered_4002.csv,sexlinked_data_driven_flag,"Flagged by the data-driven male/female heterozygosity test; reported, never filtered on","1 = flagged, 0 = not"
+samples_analysed_222.csv,sample,Individual identifier used in every other table,"KI1-KI8, or the Mijangos et al. (2022) mainland identifier"
+samples_analysed_222.csv,dart_order,DArT order the individual was sequenced in,DPla19-4171 (mainland) or DPla24-9425 (KI)
+samples_analysed_222.csv,id_in_report,Identifier as spelled in the DArT report header,text; differs from sample for V15a/V15b
+samples_analysed_222.csv,report_column_index,0-based genotype-column index in the co-processed report; samples are selected by index because seven identifiers occur in both orders as different animals,integer 0-375
+samples_analysed_222.csv,population,Population after the Mijangos et al. (2022) recoding,one of 11 labels
+samples_analysed_222.csv,region,River region,"KI, SNOWY, U_MURRAY, BORDER"
+samples_analysed_222.csv,sex,Field-recorded sex,"M, F, unknown"
+ki_individuals_metadata.csv,sample,KI individual identifier,KI1-KI8
+ki_individuals_metadata.csv,sex,Field-recorded sex at capture,Male / Female
+ki_individuals_metadata.csv,age_class,Field-assigned age class at capture,Juvenile / Sub-adult / Adult
+ki_individuals_metadata.csv,capture_month,Month of capture,YYYY-MM
+ki_individuals_metadata.csv,capture_river,River of capture,text
+ki_individuals_metadata.csv,capture_area,Protected area and region of capture,text
+ki_individuals_metadata.csv,dart_order,DArT order,DPla24-9425
+ki_individuals_metadata.csv,coordinate_note,Why per-individual coordinates are withheld,text
+diversity_by_population.csv,population,Population label,one of 11 labels
+diversity_by_population.csv,region,River region,"KI, SNOWY, U_MURRAY, BORDER"
+diversity_by_population.csv,n,Individuals in the population,count
+diversity_by_population.csv,n_loci,Loci used,4002 for every row
+diversity_by_population.csv,Ho,Observed heterozygosity,proportion 0-1
+diversity_by_population.csv,Ho_SE,Standard error of the mean of Ho across loci,proportion
+diversity_by_population.csv,He_unbiased,Unbiased Nei (1987) gene diversity,proportion 0-1
+diversity_by_population.csv,He_SE,Standard error of the mean of He across loci,proportion
+diversity_by_population.csv,He_hw,"Biased (Hardy-Weinberg) expected heterozygosity, for reference only",proportion 0-1
+diversity_by_population.csv,Fis_WC,Weir and Cockerham (1984) F_IS as a ratio of sums over loci,dimensionless
+diversity_by_population.csv,Fis_jack_SE,Delete-one-locus jackknife standard error of Fis_WC,dimensionless
+diversity_by_population.csv,Fis_boot_lo,"Lower bound, 1,000-replicate bootstrap-over-loci 95% CI for F_IS",dimensionless
+diversity_by_population.csv,Fis_boot_hi,Upper bound of the same interval,dimensionless
+diversity_by_population.csv,n_polymorphic,Loci polymorphic within the population,count of 4002
+diversity_by_population.csv,prop_polymorphic,n_polymorphic / 4002,proportion 0-1
+diversity_by_population.csv,Ar_g16,Rarefied allelic richness at g = 16 gene copies (El Mousadik and Petit 1996),alleles per locus; blank for the two n = 4 populations
+diversity_by_population.csv,Ar_g16_SE,Standard error of the mean of Ar across loci,alleles per locus
+diversity_by_population.csv,mean_folded_MAF,Mean folded minor-allele frequency over loci polymorphic in the population,proportion 0-0.5
+diversity_by_individual.csv,sample,Individual identifier,text
+diversity_by_individual.csv,population,Population label,one of 11 labels
+diversity_by_individual.csv,n_loci_called,Loci scored in the individual,4002 for every row
+diversity_by_individual.csv,Ho_ind,Proportion of scored loci at which the individual is heterozygous,proportion 0-1
+diversity_by_individual.csv,F_hom_ownpop,Excess-homozygosity F (Yang et al. 2010 F-hat-2) in the individual own-population allele-frequency frame,dimensionless
+diversity_by_individual.csv,F_uni_ownpop,"Correlation of uniting gametes (Yang et al. 2010 F-hat-3), own-population frame",dimensionless
+diversity_by_individual.csv,F_grm_ownpop,"Variance-standardised GRM diagonal minus 1 (F-hat-1), own-population frame",dimensionless
+diversity_by_individual.csv,F_uni_ownpop_lo95,"Lower bound, 1,000-replicate bootstrap-over-loci 95% CI for F_uni_ownpop",dimensionless
+diversity_by_individual.csv,F_uni_ownpop_hi95,Upper bound of the same interval,dimensionless
+diversity_by_individual.csv,n_loci_F_ownpop,Loci polymorphic in the own-population frame and used for its F estimators,count
+diversity_by_individual.csv,F_hom_mainland,Excess-homozygosity F in the pooled 214-sample mainland frame,dimensionless
+diversity_by_individual.csv,F_uni_mainland,"Correlation of uniting gametes, mainland frame",dimensionless
+diversity_by_individual.csv,F_grm_mainland,"GRM-diagonal F, mainland frame; interpret as a rank ordering only",dimensionless
+diversity_by_individual.csv,F_uni_mainland_lo95,"Lower bound, bootstrap 95% CI for F_uni_mainland",dimensionless
+diversity_by_individual.csv,F_uni_mainland_hi95,Upper bound of the same interval,dimensionless
+diversity_by_individual.csv,n_loci_F_mainland,Loci polymorphic in the mainland frame and used for its F estimators,count
+diversity_by_individual.csv,mean_kinship_within_pop,Mean Yang et al. (2010) relatedness of the individual to the others in its population,dimensionless
+diversity_by_individual.csv,max_kinship_within_pop,Maximum of the same,dimensionless
+../results/fst_pairwise.csv,"pop_i, pop_j",The two populations compared,labels
+../results/fst_pairwise.csv,"n_i, n_j",Individuals in each population,count
+../results/fst_pairwise.csv,n_loci,Loci used,4002
+../results/fst_pairwise.csv,Fst_WC,"Weir and Cockerham (1984) F_ST, ratio of sums over loci",dimensionless
+../results/fst_pairwise.csv,"Fst_lo95, Fst_hi95","1,000-replicate bootstrap-over-loci 95% CI",dimensionless
+../results/fst_pairwise.csv,Gst_Nei,Nei G_ST,dimensionless
+../results/fst_pairwise.csv,GstPP_Hedrick,"Hedrick standardised G""_ST",dimensionless
+../results/fst_pairwise.csv,"Hs, Ht",Within- and total-population gene diversity,proportion 0-1
+../results/fst_matrix.csv,population,Row population label,labels
+../results/fst_matrix.csv,<population>,Weir and Cockerham F_ST between the row and column populations; diagonal is 0,dimensionless
+../results/kinship_pairs.csv,"sample_i, sample_j",The two individuals compared,text
+../results/kinship_pairs.csv,"population_i, population_j",Their populations,labels
+../results/kinship_pairs.csv,within_pop,Both individuals in the same population,"1 = yes, 0 = no"
+../results/kinship_pairs.csv,kinship_yang2010,"Yang et al. (2010) genomic relationship, computed with within-population allele frequencies",dimensionless
+../results/kinship_pairs.csv,relatedness_scale,"The same value on the relatedness scale (unrelated ~0, full sibs and parent-offspring ~0.5); halve for a kinship coefficient",dimensionless
+../results/kinship_pairs.csv,n_loci,Loci polymorphic in the frame used for the pair,count
+../results/pca_scores.csv,"sample, population, region",Individual and its grouping,text
+../results/pca_scores.csv,PC1-PC6,"Principal component scores under the Patterson et al. (2006) normalisation of the 4,002 x 222 dosage matrix",dimensionless
+../results/TableS_old_vs_new.csv,"population, n",Population and sample size,"text, count"
+../results/TableS_old_vs_new.csv,"loci_old, loci_new","Loci in the submitted (1,296) and co-processed (4,002) analyses",count
+../results/TableS_old_vs_new.csv,Ho_old ... Ar16_pct_change,"Submitted versus recomputed Ho, He, Fis, polymorphic loci and Ar(16), with differences and percentage changes; the Fis_estimator_* columns name the estimator each value came from",mixed
+../results/scaffold_chrom_crosswalk.csv,scaffold,PTTO01 scaffold identifier,text
+../results/scaffold_chrom_crosswalk.csv,refseq_majority,Majority RefSeq chromosome accession among the anchor loci on the scaffold,text
+../results/scaffold_chrom_crosswalk.csv,chrom_label,Chromosome label for the scaffold,"1-21, X1-X5, Y1-Y5, unplaced, unanchored"
+../results/scaffold_chrom_crosswalk.csv,purity,Proportion of anchor loci on the scaffold agreeing with refseq_majority,proportion 0-1
+../results/scaffold_chrom_crosswalk.csv,n_anchor_loci,Anchor loci (AlleleIDs shared with the Mijangos-only report) on the scaffold,count
+../results/scaffold_chrom_crosswalk.csv,class,Chromosome class assigned to the scaffold,autosome / sex / unplaced / unanchored

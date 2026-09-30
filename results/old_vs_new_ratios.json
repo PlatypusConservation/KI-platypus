@@ -1,0 +1,18 @@
+{
+ "KI_pct_of_mainland_mean_He_old": 86.71552553808858,
+ "KI_pct_of_mainland_mean_He_new": 86.49100738591456,
+ "KI_pct_of_OVENS_He_old": 83.71457094237961,
+ "KI_pct_of_OVENS_He_new": 84.23712440405042,
+ "KI_pct_of_mainland_mean_Ar16_old": 92.5,
+ "KI_pct_of_mainland_mean_Ar16_new": 94.11076100490453,
+ "mean_He_pct_change_mainland": -26.881913156072358,
+ "He_pct_change_KI": -27.064025726694396,
+ "loci_old": 1296,
+ "loci_new": 4002,
+ "locus_gain_factor": 3.087962962962963,
+ "mijangos2022_published_He": 0.14,
+ "new_mainland_mean_He": 0.11034407009728069,
+ "discrepancy_vs_mijangos_published_He": -0.029655929902719327,
+ "discrepancy_vs_mijangos_published_He_pct": -21.182807073370945,
+ "discrepancy_explanation": "EXPECTED, not an error. The co-processed panel is ascertained across all 376 samples and therefore retains loci that are monomorphic within the Mijangos et al. (2022) 218-sample panel; neither the Mijangos-only report nor the CloneID intersection ever contained them. Including them lowers every population mean H_E. Absolute H_E is therefore NOT comparable to the published Table 1 values and all KI-versus-mainland claims are made in relative terms."
+}

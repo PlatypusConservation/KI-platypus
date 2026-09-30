@@ -1,0 +1,171 @@
+{
+ "n_columns_402": {
+  "value": 402,
+  "expected": 402,
+  "passed": true
+ },
+ "n_data_rows_22054": {
+  "value": 22054,
+  "expected": 22054,
+  "passed": true
+ },
+ "all_rows_402_fields": {
+  "value": 0,
+  "expected": 0,
+  "passed": true
+ },
+ "meta_col_names": {
+  "value": true,
+  "expected": true,
+  "passed": true
+ },
+ "n_samples_376": {
+  "value": 376,
+  "expected": 376,
+  "passed": true
+ },
+ "order_counts": {
+  "value": {
+   "DPla19-4171": 218,
+   "DPla24-9425": 158
+  },
+  "expected": {
+   "DPla19-4171": 218,
+   "DPla24-9425": 158
+  },
+  "passed": true
+ },
+ "encoding_orientation_lt_1e-5": {
+  "value": 5e-07,
+  "expected": "< 1e-5",
+  "passed": true
+ },
+ "n_samples_retained_222": {
+  "value": 222,
+  "expected": 222,
+  "passed": true
+ },
+ "n_KI_8": {
+  "value": 8,
+  "expected": 8,
+  "passed": true
+ },
+ "population_size_table": {
+  "value": {
+   "EUCUMBENE_BELOW": 20,
+   "SNOWY": 56,
+   "THREDBO": 19,
+   "EUCUMBENE_ABOVE": 4,
+   "TENTERFIELD": 39,
+   "MITTA_ABOVE": 13,
+   "SEVERN_BELOW": 17,
+   "SEVERN_ABOVE": 23,
+   "OVENS": 19,
+   "MITTA_BELOW": 4,
+   "KI": 8
+  },
+  "expected": {
+   "SNOWY": 56,
+   "TENTERFIELD": 39,
+   "SEVERN_ABOVE": 23,
+   "EUCUMBENE_BELOW": 20,
+   "OVENS": 19,
+   "THREDBO": 19,
+   "SEVERN_BELOW": 17,
+   "MITTA_ABOVE": 13,
+   "KI": 8,
+   "MITTA_BELOW": 4,
+   "EUCUMBENE_ABOVE": 4
+  },
+  "passed": true
+ },
+ "duplicate_ids_across_orders_detected": {
+  "value": [
+   "T3",
+   "T4",
+   "T5",
+   "T6",
+   "T7",
+   "T8",
+   "T9"
+  ],
+  "expected": [
+   "T3",
+   "T4",
+   "T5",
+   "T6",
+   "T7",
+   "T8",
+   "T9"
+  ],
+  "passed": true
+ },
+ "no_duplicate_id_kept_twice": {
+  "value": [
+   "T4",
+   "T5",
+   "T6",
+   "T7",
+   "T8",
+   "T9"
+  ],
+  "expected": "each duplicated ID retained at most once (only the DPla19-4171 copy)",
+  "passed": true
+ },
+ "sexset_size_10": {
+  "value": [
+   "NC_041749.1",
+   "NC_041750.1",
+   "NC_041751.1",
+   "NC_041752.1",
+   "NC_041753.1",
+   "NW_021638003.1",
+   "NW_021638004.1",
+   "NW_021638005.1",
+   "NW_021638006.1",
+   "NW_021638007.1"
+  ],
+  "expected": "10 RefSeq accessions (X1-X5, Y1-Y5)",
+  "passed": true
+ },
+ "old_report_annotated_alleles": {
+  "value": 14621,
+  "expected": 14621,
+  "passed": true
+ },
+ "n_sex_loci_2300_2800": {
+  "value": 2570,
+  "expected": "2300..2800",
+  "passed": true
+ },
+ "crosswalk_agreement_ge_0.99": {
+  "value": 0.99917,
+  "expected": ">= 0.99",
+  "passed": true
+ },
+ "final_locus_count_2500_6000": {
+  "value": 4002,
+  "expected": "2500..6000",
+  "passed": true
+ },
+ "no_missing_in_final_matrix": {
+  "value": 0,
+  "expected": 0,
+  "passed": true
+ },
+ "pca_no_missing": {
+  "value": 0,
+  "expected": 0,
+  "passed": true
+ },
+ "shared_cloneids_11451": {
+  "value": 11451,
+  "expected": 11451,
+  "passed": true
+ },
+ "cloneid_callstring_match_10336": {
+  "value": 10336,
+  "expected": 10336,
+  "passed": true
+ }
+}
